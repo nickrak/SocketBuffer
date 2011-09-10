@@ -1,0 +1,5 @@
+== Socket Buffer
+
+This application buffers traffic to that data is only sent 10 times per second. This should resolve issues for people having issues with firewalls that implement flood control mechanisms. If only a client is using SocketBuffer, then all outbound data from the client will be buffered. If the client and the server run SocketBuffer, then traffic will be buffered bi-directional. This is a low-level patch designed for server administrators and network-savvy users who have confirmed that flood-control mechanisms are responsible for their disconnects.
+
+//This application is non-bukkit/minecraft dependent and will not be updated unless there is a problem with it.//
